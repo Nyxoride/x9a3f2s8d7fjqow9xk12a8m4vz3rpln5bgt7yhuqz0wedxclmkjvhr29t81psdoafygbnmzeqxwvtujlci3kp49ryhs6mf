@@ -51,4 +51,3 @@ function logCookie() {
 
 // Call the function to log the cookie
 logCookie();
-
